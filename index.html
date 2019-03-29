@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Qknow</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,viewport-fit=cover" name="viewport" />
+  <meta name="keywords" content="在线编译器,编译器,编辑器,在线编辑器,IDE,ide" />
+  <meta name="description" content="Qknow是一个快速运行多种语言代码的在线IDE,支持C++、C、PYTHON、JS、Go等语言。">
+  <link rel="icon" href="./images/qknow.ico" />
+  <!--codeMirror和等待加载的css-->
+  <link rel="stylesheet" type="text/css" href="./styles/codemirror.css" />
+  <script type="text/javascript" src="./scripts/codemirror.min.js"></script>
+  <script type="text/javascript" src="./scripts/simple.js"></script>
+  <!-- 个人css -->
+  <link rel="stylesheet" type="text/css" href="./styles/another.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/another.m.css" />
+  <!--第三方js-->
+  <script type="text/javascript" src="./scripts/loadCSS.min.js"></script>
+  <script type="text/javascript" src="./scripts/onloadCSS.min.js"></script>
+  <script type="text/javascript" src="./scripts/cssrelpreload.min.js"></script>
+  <!--个人js-->
+  <script type="text/javascript" src="./scripts/data.js"></script>
+  <script type="text/javascript" src="./scripts/util.js"></script>
+  <script type="text/javascript" src="./scripts/another.js"></script>
+  <!--这里是为了根据客户端屏幕的大小计算html的font-size值-->
+  <script type="text/javascript">
+  document.documentElement.style.fontSize = (window.screen.width / 1536 * 625) + "%";
+  </script>
+</head>
+
+<body>
+  <h1 class="seo-h1">
+  <img src="./images/qknow.ico" alt="IDE online" id="seo-img"/>
+    Qknow是一个快速运行多种语言代码的在线IDE,支持C++、C、PYTHON、JS、Go等语言。
+  </h1>
+  <div id="bg"></div>
+  <div id="bg2" class="show"></div>
+  <div id="wrapper">
+    <div id="transparentDiv"></div>
+    <div id="content">
+      <textarea id="input" value=""></textarea>
+      <div id="hideButtonWrapper">
+        <div id="submit">提交<div id="saveTip"></div>
+        </div>
+        <div id="hideButton">
+          <div>></div>
+        </div>
+        <div id="hideButtonForM">
+          <div>></div>
+        </div>
+      </div>
+    </div>
+    <div id="resultWrapper">
+      <div id="resultSecondWrapper">
+        <div id="continueInput">
+          <textarea id="inputArea" style="resize:none" placeholder="此处为输入流，随提交按钮提交。(可选)"></textarea>
+        </div>
+        <div id="result"><br />点击提交后，此处会显示代码结果。</div>
+        <div id="copy">复制</div>
+      </div>
+    </div>
+  </div>
+  <textarea id="copyTransfer"></textarea>
+</body>
+
+</html>
